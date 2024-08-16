@@ -29,7 +29,7 @@ const GitHubUserDetails = () => {
     try {
       const response = await axios.get(`https://api.github.com/users/${searchTerm}`, {
         headers: {
-          Authorization: `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`, // Replace YOUR_ACCESS_TOKEN with a valid GitHub token
+          Authorization: `***`, // Replace YOUR_ACCESS_TOKEN with a valid GitHub token
         },
       });
       setUserDetails([response.data]); // Display only the searched user
